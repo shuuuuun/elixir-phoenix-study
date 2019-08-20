@@ -15,7 +15,8 @@ config :hello, HelloWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "4HHXYfE/ih/srcvCz0bX4GorsWh0kKXFB57w/G2QezARbMjuLsvfwaDwhGwVoUIQ",
   render_errors: [view: HelloWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Hello.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Hello.PubSub, adapter: Phoenix.PubSub.PG2],
+  http: [protocol_options: [max_request_line_length: 8192, max_header_value_length: 8192]]
 
 # Configures Elixir's Logger
 config :logger, :console,
