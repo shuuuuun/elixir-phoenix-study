@@ -1,0 +1,19 @@
+<section id="torch-toolbar">
+  <div class="torch-container">
+    <%= link "Edit", to: Routes.admin_operator_path(@conn, :edit, @operator), class: "torch-button" %>
+    <%= link "Back", to: Routes.admin_operator_path(@conn, :index), class: "torch-button" %>
+  </div>
+</section>
+
+<section id="torch-header-and-content">
+  <div class="torch-container">
+    <div class="header">
+      <h3>Operator Details</h3>
+    </div>
+    <ul>
+      <%= for field <- @fields do %>
+        <li><span><%= field %></span>：<span><%= Map.get(@operator, String.to_atom(field)) %></span></li>
+      <% end %>
+    </ul>
+  </div>
+</section>

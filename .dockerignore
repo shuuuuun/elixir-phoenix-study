@@ -1,0 +1,13 @@
+.circleci
+.dockerignore
+.envrc
+.git
+.gitignore
+.vscode
+Makefile
+README.md
+backend
+# docker
+docker-compose.yml
+frontend
+# public

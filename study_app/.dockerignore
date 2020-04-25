@@ -1,0 +1,19 @@
+.dockerignore
+.formatter.exs
+.gitignore
+Dockerfile
+README.md
+_build
+# assets
+# bin
+# config
+deps
+docs
+# lib
+log
+# mix.exs
+# mix.lock
+# priv
+priv/static
+script
+test
